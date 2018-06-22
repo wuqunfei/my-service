@@ -31,7 +31,7 @@
     <scm>
         <url>https://github.com/wuqunfei/my-service.git</url>
         <developerConnection>scm:git:ssh://git@github.com:wuqunfei/my-service.git</developerConnection>
-        <tag>release-1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
