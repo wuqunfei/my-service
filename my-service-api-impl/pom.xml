@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.tipico.services.myservice</groupId>
+        <artifactId>my-service-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>my-service-api-impl</artifactId>
+    <packaging>jar</packaging>
+
+    <name>API implementation module</name>
+
+    <!-- please add a meaningful description of your service here -->
+    <description>This project contains the API implementation layer.</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.tipico.services.myservice</groupId>
+            <artifactId>my-service-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.tipico.services.myservice</groupId>
+            <artifactId>my-service-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.tipico.services.myservice</groupId>
+            <artifactId>my-service-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

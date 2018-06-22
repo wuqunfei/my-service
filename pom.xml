@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.tipico.services</groupId>
+        <artifactId>services-parent</artifactId>
+        <version>2.0.0</version>
+    </parent>
+
+    <groupId>com.tipico.services.myservice</groupId>
+    <artifactId>my-service-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>my-service Service parent project</name>
+
+    <!-- please add a meaningful description of your service here -->
+    <description />
+
+    <modules>
+    <module>my-service</module>
+    <module>my-service-api</module>
+    <module>my-service-api-impl</module>
+    <module>my-service-common</module>
+    <module>my-service-domain</module>
+    <module>my-service-infra</module>
+  </modules>
+
+    <!-- Please check if the generated git URL is correct -->
+    <scm>
+        <url>https://github.com/wuqunfei/my-service.git</url>
+        <developerConnection>scm:git:ssh://git@github.com:wuqunfei/my-service.git</developerConnection>
+        <tag>release-1.0.0</tag>
+    </scm>
+
+    <issueManagement>
+        <system>Jira</system>
+        <url><!-- put the jira link to the project here --></url>
+    </issueManagement>
+
+    <properties>
+        <!-- metadata for the project. -->
+        <tipico.docs><!-- please add confluence link here --></tipico.docs>
+        <tipico.tribe><!-- add your tribe abbreviation --></tipico.tribe>
+        <tipico.team><!-- your team name --></tipico.team>
+        <tipico.slack><!-- slack channel for public support of the service --></tipico.slack>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,15 @@
+# Add the port your service shall run on in here.
+server:
+  port:  # add the service port of your service
+
+management:
+  port: # add the management port of your service
+  endpoints:
+    web:
+      expose: "*" # provide all management endpoints per http (for development/testing only)
+
+# Set logging levels by package names
+logging:
+  level:
+    com.tipico: DEBUG
+

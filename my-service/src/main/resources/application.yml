@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: my-service
+
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+server:
+  port: # add the default service port of your service (from the service port registration page)
+
+logging:
+  file: logs/my-service.log
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: # add the default management port of your service (from the service port registration page)
+  endpoints:
+    web:
+      base-path: /-system
+      exposure:
+        include: ["info", "health", "metrics", "prometheus"]
