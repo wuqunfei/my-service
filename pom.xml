@@ -10,7 +10,7 @@
 
     <groupId>com.tipico.services.myservice</groupId>
     <artifactId>my-service-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>my-service Service parent project</name>
