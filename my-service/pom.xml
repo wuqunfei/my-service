@@ -62,4 +62,8 @@
         </plugins>
     </build>
 
+
+  <scm>
+    <tag>release-1.0.0</tag>
+  </scm>
 </project>

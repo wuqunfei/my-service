@@ -16,4 +16,8 @@
     <!-- Please add a meaningful description here -->
     <description>This project contains cross layer classes (Exceptions, constants etc).</description>
 
+
+  <scm>
+    <tag>release-1.0.0</tag>
+  </scm>
 </project>
